@@ -1,0 +1,36 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="supplyblockchain.RequirementsList" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Product Requirements" showNavButton="true">
+		<content>
+				    <sap.ui.layout:VerticalLayout xmlns:sap.ui.layout="sap.ui.layout" width="100%" id="__layout0">
+				        <sap.ui.layout:content>
+				            <List noDataText="No requirements to display here" id="__list0">
+				                <items>
+				                    <!-- <StandardListItem type="Navigation" title="List Item 1" description="Description text" icon="sap-icon://picture" id="__item0"/>
+				                      <StandardListItem type="Navigation" title="List Item 2" description="Description text" icon="sap-icon://picture" id="__item1"/>
+				                    <StandardListItem type="Navigation" title="List Item 3" description="Description text" icon="sap-icon://picture" id="__item2"/> -->
+				                </items>
+				            </List>
+				        </sap.ui.layout:content>
+				    </sap.ui.layout:VerticalLayout>
+				    <Input width="100%" id="idTextProduct" description="Product ID"/>
+				    <Input width="100%" id="idTextPrice" description="Max Price" type="Number"/>
+				    <!--  <Input width="100%" id="idTextValidFrom" description="Valid From"/>
+				    <Input width="100%" id="idTextValidTo" description="Valid To"/> 
+				    <Button text="Save" width="100px" id="idBtnOk" press="onClickOk"/> -->
+				</content>
+				<footer>
+					<OverflowToolbar id="otbFooter">
+						<ToolbarSpacer/>
+						<OverflowToolbarButton text="Edit" press="onClikeEdit" icon="sap-icon://edit"/>
+						<OverflowToolbarButton text="Add" press="onClikeAdd" icon="sap-icon://add"/>
+						
+						<Button type="Accept" text="Save" press="onClickOk">
+							<layoutData><OverflowToolbarLayoutData moveToOverflow="false" /></layoutData>
+						</Button>
+						
+						
+					</OverflowToolbar>
+				</footer>
+	</Page>
+</core:View>

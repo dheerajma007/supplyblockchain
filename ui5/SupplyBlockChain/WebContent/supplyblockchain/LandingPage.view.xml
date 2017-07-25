@@ -1,0 +1,14 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="supplyblockchain.LandingPage" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Supply-Block-Chain">
+		<content>
+			<TileContainer editable="false" allowAdd="false" id="__container0">
+		        <tiles>
+		            <StandardTile title="Update Price" info="Add or change price of product" icon="sap-icon://add-product" activeIcon="sap-icon://add-product"  press="onUpdatePrice" id="__tile0"/>
+		            <StandardTile title="View Price" info="Check price of products" icon="sap-icon://show-edit" activeIcon="sap-icon://show-edit" press="onViewPrice" id="__tile1"/>
+		            <StandardTile title="Update Requirements" info="Add or change max price of requirements" icon="sap-icon://add-product" activeIcon="sap-icon://add-product" press="onUpdateReq" id="__tile2"/>
+		            <StandardTile title="View Contract" info="Display Contract details" icon="sap-icon://show-edit" activeIcon="sap-icon://show-edit" press="onViewContract" id="__tile3"/></tiles>
+		    </TileContainer>	
+		</content>
+	</Page>
+</core:View>

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal">
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+		
+		<script src="https://cdn.rawgit.com/ethereum/web3.js/develop/dist/web3.js"></script>
+		<script src="connect.js"></script>
+		<script>
+				sap.ui.localResources("supplyblockchain");
+				jQuery.sap.includeScript("connect.js")
+				var app = new sap.m.App({id:"app", initialPage:"idLogin"});
+				var landingPage = sap.ui.view({id:"idLandingPage", viewName:"supplyblockchain.LandingPage", type:sap.ui.core.mvc.ViewType.XML});
+				var addProductPage = sap.ui.view({id:"idProductDetails", viewName:"supplyblockchain.ProductDetails", type:sap.ui.core.mvc.ViewType.XML});
+				var viewProductPage = sap.ui.view({id:"idViewProducts", viewName:"supplyblockchain.ViewProduct", type:sap.ui.core.mvc.ViewType.XML});
+				var loginPage = sap.ui.view({id:"idLogin", viewName:"supplyblockchain.Login", type:sap.ui.core.mvc.ViewType.XML});
+				var addReq = sap.ui.view({id:"idUpdateReq", viewName:"supplyblockchain.RequirementsList", type:sap.ui.core.mvc.ViewType.XML});
+				var contract = sap.ui.view({id:"idViewContract", viewName:"supplyblockchain.Contracts", type:sap.ui.core.mvc.ViewType.XML});
+				app.addPage(contract);
+				app.addPage(loginPage);
+				app.addPage(addReq)
+				app.addPage(addProductPage);
+				app.addPage(viewProductPage);
+				app.addPage(landingPage);
+				app.placeAt("content");
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+	</body>
+</html>

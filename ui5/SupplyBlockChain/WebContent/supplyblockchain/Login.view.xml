@@ -1,0 +1,74 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="supplyblockchain.Login" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Supply-Block-Chain">
+		<content>
+			<!--  Do login. Update web3.eth.account in session variable
+			Use that in all other controller calls to ethereum -->
+				<VBox width="100%" direction="Column" id="__vbox0" justifyContent="Center" fitContainer="true" alignContent="Center" alignItems="Center">
+			   
+			    <items>
+			   
+			        <sap.ui.layout.form:Form editable="true" xmlns:sap.ui.layout.form="sap.ui.layout.form" id="__form0">
+			   
+			            <sap.ui.layout.form:formContainers>
+			   
+			                <sap.ui.layout.form:FormContainer title="Login/Register" id="__container0">
+			   
+			                    <sap.ui.layout.form:formElements>
+			   
+			                        <sap.ui.layout.form:FormElement label="Account" id="__element1">
+			   
+			                            <sap.ui.layout.form:fields>
+			   
+			                                <Select  id="__select0">
+			   
+			                                    <items>
+			   
+			                                    </items>
+			   
+			                                </Select>
+			   
+			                            </sap.ui.layout.form:fields>
+			   
+			                        </sap.ui.layout.form:FormElement>
+			   
+			                        <sap.ui.layout.form:FormElement label="Name" id="__element2">
+			   
+			                            <sap.ui.layout.form:fields>
+			   
+			                                <Input width="100%" id="__input2"/>
+			   
+			                            </sap.ui.layout.form:fields>
+			   
+			                        </sap.ui.layout.form:FormElement>
+			   
+			                    </sap.ui.layout.form:formElements>
+			   
+			                </sap.ui.layout.form:FormContainer>
+			   
+			            </sap.ui.layout.form:formContainers>
+			   
+			            <sap.ui.layout.form:layout>
+			   
+			                <sap.ui.layout.form:ResponsiveGridLayout id="__layout1"/>
+			   
+			            </sap.ui.layout.form:layout></sap.ui.layout.form:Form>
+			   
+			        <sap.ui.layout:HorizontalLayout xmlns:sap.ui.layout="sap.ui.layout" id="__layout2">
+			   
+			            <sap.ui.layout:content>
+			   
+			                <Button text="Login" width="100px" id="idBtnLogin" press="doLogin"/>
+			   
+			                <Button text="Register" width="100px" id="idBtnRegister" press="doRegister"/>
+			   
+			            </sap.ui.layout:content>
+			   
+			        </sap.ui.layout:HorizontalLayout>
+			   
+			    </items>
+			   
+			</VBox>
+		</content>
+	</Page>
+</core:View>
